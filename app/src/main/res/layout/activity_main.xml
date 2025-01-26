@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/self_check"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <FrameLayout android:id="@+id/sleep_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/diet_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/exercise_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/stress_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/no_anxiety_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/calm_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/talk_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/movement_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/concentration_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/condition_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/self_trust_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/other_trust_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <FrameLayout android:id="@+id/trusted_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_radio_group"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="予防・回復対処"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <EditText
+            android:id="@+id/prevention_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="散歩・ストレッチなど"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:gravity="top"
+            android:background="@android:drawable/editbox_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="気づき・備考"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="気づき・備考"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:gravity="top"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="送信"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_show_table"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="データを見る"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

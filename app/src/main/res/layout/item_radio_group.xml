@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        tools:text="項目名" /> <!-- ここを tools:text に変更 -->
+
+    <RadioGroup
+        android:id="@+id/item_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:button="@drawable/radio_circle"
+            android:contentDescription="良い (○)" />
+
+        <RadioButton
+            android:id="@+id/radio_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_triangle"
+            android:contentDescription="普通 (△)" />
+
+        <RadioButton
+            android:id="@+id/radio_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:button="@drawable/radio_cross"
+            android:contentDescription="悪い (×)" />
+    </RadioGroup>
+
+</LinearLayout>

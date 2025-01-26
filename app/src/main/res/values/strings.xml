@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Self Check Application</string>
+    <string name="self_check">セルフチェック</string>
+    <string name="bad">×</string>
+    <string name="not_good">△</string>
+    <string name="good">○</string>
+    <string name="item">項目名</string>
+</resources>
